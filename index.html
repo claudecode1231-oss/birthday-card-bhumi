@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>🎂 Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pacifico&family=Sacramento&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Floating particles background -->
+  <div id="particles-container"></div>
+
+  <!-- Main 3D Card Scene -->
+  <div class="card-scene">
+    <div class="card-3d-wrap">
+      <div class="card-3d" id="birthday-card">
+
+        <!-- Front of Card -->
+        <div class="card-face card-front">
+          <div class="card-front-content">
+            <div class="sparkle-ring">
+              <span class="sparkle s1">✦</span>
+              <span class="sparkle s2">✧</span>
+              <span class="sparkle s3">✦</span>
+              <span class="sparkle s4">✧</span>
+              <span class="sparkle s5">✦</span>
+              <span class="sparkle s6">✧</span>
+              <span class="sparkle s7">✦</span>
+              <span class="sparkle s8">✧</span>
+            </div>
+            <div class="cake-icon">🎂</div>
+            <h1 class="card-title">Happy<br/>Birthday<br/>Papa!</h1>
+            <p class="card-subtitle">Click to open your card</p>
+            <div class="hover-hint">
+              <span class="material-symbols-outlined">swipe</span>
+              <span>Hover & tilt me</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inside of Card -->
+        <div class="card-face card-inside">
+          <div class="card-inside-content">
+            <div class="balloon-parade">
+              <span class="balloon b1">🎈</span>
+              <span class="balloon b2">🎈</span>
+              <span class="balloon b3">🎈</span>
+              <span class="balloon b4">🎈</span>
+              <span class="balloon b5">🎈</span>
+            </div>
+
+            <div class="birthday-message">
+              <p class="greeting-line">જન્મદિવસની હાર્દિક શુભકામનાઓ, પપ્પા! �</p>
+              <p class="greeting-line">પ્રિય પપ્પા, તમને જન્મદિવસની હાર્દિક શુભકામનાઓ!</p>
+              <p class="greeting-line">તમે મારી જિંદગીના સૌથી મોટા આધારસ્તંભ છો.</p>
+              <p class="greeting-line">તમારો પ્રેમ અને માર્ગદર્શન મને હંમેશા આગળ વધવાની પ્રેરણા આપે છે.</p>
+              <div class="highlight-words">
+                <span class="hw love" style="--delay:0s">તમારો પ્રેમ</span>
+                <span class="hw laughter" style="--delay:0.15s">તમારો માર્ગદર્શન</span>
+                <span class="hw joy" style="--delay:0.3s">મારી પ્રેરણા</span>
+              </div>
+              <p class="greeting-line">ભગવાન તમને લાંબું આયુષ્ય અને સ્વાસ્થ્ય આપે.</p>
+              <p class="greeting-line love-line">હું તમને ખૂબ પ્રેમ કરું છું! 🎂❤️</p>
+            </div>
+
+            <div class="wishes-grid">
+              <div class="wish-item" style="--i:0">
+                <span class="wish-emoji">🎁</span>
+                <span class="wish-text">લાંબી આયુષ્ય</span>
+              </div>
+              <div class="wish-item" style="--i:1">
+                <span class="wish-emoji">⭐</span>
+                <span class="wish-text">સુખ અને શાંતિ</span>
+              </div>
+              <div class="wish-item" style="--i:2">
+                <span class="wish-emoji">💫</span>
+                <span class="wish-text">સ્વાસ્થ્ય અને શક્તિ</span>
+              </div>
+              <div class="wish-item" style="--i:3">
+                <span class="wish-emoji">🌈</span>
+                <span class="wish-text">સુંદર ક્ષણો</span>
+              </div>
+            </div>
+
+            <div class="confetti-line"></div>
+
+            <button class="close-card-btn" id="close-card">
+              <span class="material-symbols-outlined">flip_to_front</span>
+              Close Card
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-bar">
+      <button class="action-btn" id="confetti-btn" title="Launch Confetti!">
+        <span class="material-symbols-outlined">celebration</span>
+        <span>Confetti!</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
